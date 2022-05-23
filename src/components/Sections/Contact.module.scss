@@ -1,0 +1,20 @@
+@import '../../sassStyles/variables';
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+
+    p {
+        max-width: 480px;
+
+        &:last-child {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    }
+}
+
+.highlight {
+    color: $redColor;
+}

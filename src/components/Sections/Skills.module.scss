@@ -1,0 +1,54 @@
+@import '../../sassStyles/variables';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.category {
+    margin-bottom: 50px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    h3 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+
+        span:first-child {
+            font-size: 0.875rem;
+            color: $redColor;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .categories {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .category {
+        margin-bottom: 0;
+    }
+}

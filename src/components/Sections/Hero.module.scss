@@ -1,0 +1,119 @@
+@import '../../sassStyles/variables';
+@import '../../sassStyles/animations';
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 60px 20px 40px 20px;
+}
+
+.content {
+    order: 2;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation: $slideUp 0.6s;
+
+    h1 {
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        font-size: 3rem;
+        span {
+            color: $redColor;
+        }
+
+        span:nth-child(1) {
+            opacity: .05;
+            transform: scaleY(.6);
+            line-height: 0;
+        }
+        
+        span:nth-child(2) {
+            opacity: .09;
+            transform: scaleY(.7);
+            line-height: 1;
+        }
+
+        span:nth-child(3) {
+            opacity: .14;
+            transform: scaleY(.9);
+            line-height: 0.2;
+        }
+
+        span:nth-child(4) {
+            opacity: 1;
+            line-height: 1.2;
+            color: $whiteColor;
+        }
+
+        span:nth-child(5) {
+            margin-bottom: 10px;
+            font-size: 1.25rem;
+            line-height: 0.4;
+        }
+    }
+
+    p {
+        font-size: 1.25rem;
+
+        .highlight {
+            color: $redColor;
+        }
+    }
+}
+
+.separator {
+    width: 40px;
+    height: 4px;
+    background-color: $redColor;
+    margin: 20px auto;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    opacity: 0;
+    animation: $slideUp 0.8s;
+
+    a:first-child {
+        margin-bottom: 20px;
+    }
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    animation: $slideUp 1s;
+}
+
+@media screen and (min-width: 700px) {
+    .content {
+
+        h1 {
+            font-size: 4.875rem;
+
+            span:nth-child(5) {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .buttons {
+        flex-direction: row;
+        justify-content: center;
+
+        a:first-child {
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+    }
+}

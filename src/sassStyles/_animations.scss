@@ -1,0 +1,54 @@
+$slideDown: slideDown 0.4s ease-in forwards;
+$slideUp: slideUp 0.4s ease-in forwards;
+$welcomeAnimation: welcomeAnimation 2s ease-in-out;
+$growRight: growRight 0.2s ease-in 0.25s forwards;
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-210%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(1);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(1);
+    }
+}
+
+@keyframes welcomeAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-150%);
+    }
+
+    30%, 70% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(150%);
+    }
+}
+
+@keyframes growRight {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

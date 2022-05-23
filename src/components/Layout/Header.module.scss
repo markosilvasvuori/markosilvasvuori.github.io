@@ -1,0 +1,48 @@
+@import '../../sassStyles/animations';
+@import '../../sassStyles/variables';
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: $fontStack;
+    animation: $slideDown;
+}
+
+.hamburger {
+    display: block;
+}
+
+.desktop-nav {
+    display: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+@media screen and (min-width: 700px) {
+    .header {
+        padding: 0 40px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: block;
+    }
+}
