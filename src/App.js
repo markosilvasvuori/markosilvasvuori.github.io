@@ -14,7 +14,7 @@ function App() {
 
   setTimeout(() => {
     setWelcomeDone(true);
-  }, 2150);
+  }, 2200);
 
   return (
     <>
