@@ -16,7 +16,7 @@ export const projectsArray = [
     },
     {
         title: 'Open Blog',
-        technologies: ['React', 'NextJS'],
+        technologies: ['NextJS'],
         description: 'I built this blog as a NextJS practice project. Open Blog is a blog where anyone can post, edit or delete blog posts.',
         liveLink: 'https://open-blog-seven.vercel.app/',
         gitHubLink: 'https://github.com/markosilvasvuori/open-blog',
