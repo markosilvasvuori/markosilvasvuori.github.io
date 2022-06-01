@@ -23,8 +23,9 @@
         flex-direction: column;
         text-transform: uppercase;
         font-size: 3rem;
+
         span {
-            color: $redColor;
+            // color: $redColor;
         }
 
         span:nth-child(1) {
@@ -48,13 +49,14 @@
         span:nth-child(4) {
             opacity: 1;
             line-height: 1.2;
-            color: $whiteColor;
+            color: $blackColor;
         }
 
         span:nth-child(5) {
             margin-bottom: 10px;
             font-size: 1.25rem;
             line-height: 0.4;
+            color: $redColor;
         }
     }
 
