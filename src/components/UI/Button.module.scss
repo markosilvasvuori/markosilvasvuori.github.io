@@ -7,7 +7,6 @@
     color: #f8f8f8;
     font-size: 0.875rem;
     font-weight: bold;
-    border-radius: 4px;
     white-space: nowrap;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -54,10 +53,11 @@ a {
 }
 
 .outlined {
-    outline: 1px solid $whiteColor;
+    color: $blackColor;
+    outline: 2px solid $blackColor;
 
     &::before {
-        background-color: $whiteColor;
+        background-color: $blackColor;
     }
 
     &::after {
@@ -65,6 +65,6 @@ a {
     }
 
     &:hover {
-        color: $darkGrayColor;
+        color: $whiteColor;
     }
 }
