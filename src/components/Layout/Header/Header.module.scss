@@ -1,0 +1,19 @@
+@import '../../../sassStyles/variables.scss';
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+    z-index: 100;
+}
+
+.logo {
+    font-family: $boldFontFamily;
+    font-size: 1.65rem;
+    z-index: 110;
+}

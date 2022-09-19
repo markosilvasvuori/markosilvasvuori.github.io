@@ -1,0 +1,33 @@
+@import './sassStyles/variables.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: $mainFontFamily;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(#181b1f 2px, $blackColor 2px);
+  background-size: 100px 100px;
+  color: $whiteColor;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $boldFontFamily;
+  text-transform: uppercase;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

@@ -1,0 +1,41 @@
+@import './variables.scss';
+
+@mixin commonSection {
+    .section {
+        display: flex;
+        flex-direction: column;
+        color: $whiteColor;
+        text-align: center;
+    
+        .container {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+    
+    .heading {
+        margin-bottom: 30px;
+        font-size: 9vw;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        .section {
+            display: inline-block;
+            text-align: left;
+        
+            .container {
+                width: 50%;
+                margin-left: auto;
+                padding: 0 20px;
+            }
+        }
+        
+        .heading {
+            float: left;
+            font-size: 5vw;
+            margin-bottom: 0;
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import '../../../sassStyles/functions.scss';
+@import '../../../sassStyles/variables.scss';
+
+@include commonSection;
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .skills-list {
+        margin-bottom: 50px;
+
+        ul {
+            list-style: none;
+        }
+
+        h5 {
+            font-size: 1.2rem;
+            color: $redColor;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .skills {
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .skills {
+        flex-direction: row;
+    
+        .skills-list {
+            margin-right: 50px;
+            margin-bottom: 0;
+    
+            ul {
+                list-style: none;
+            }
+    
+            h5 {
+                font-size: 1.2rem;
+                color: $redColor;
+            }
+        }
+    }
+}

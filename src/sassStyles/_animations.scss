@@ -1,0 +1,89 @@
+$distortionOne: distortionOne .4s infinite alternate;
+$distortionTwo: distortionTwo .6s infinite alternate;
+$blobTransformAnimation: blobTransformAnimation 4s ease-in-out infinite alternate;
+$blobMovementOne: blobMovementOne 12s ease-in-out infinite;
+$blobMovementTwo: blobMovementTwo 14s ease-in-out infinite;
+
+// Line distrotions
+@keyframes distortionOne {
+    50% {
+        border-radius: 49% 51% 50% 51%;
+    }
+
+    75% {
+        border-radius: 50% 49% 49% 50%;
+    }
+
+    100% {
+        border-radius: 51% 50% 51% 49%;
+    }
+}
+
+@keyframes distortionTwo {
+    50% {
+        border-radius: 51% 49% 51% 50%;
+    }
+
+    75% {
+        border-radius: 49% 50% 50% 49%;
+    }
+
+    100% {
+        border-radius: 50% 51% 50% 51%;
+    }
+}
+
+// Blob animations
+@keyframes blobTransformAnimation {
+    0% {
+        border-radius: 25% 47% 75% 70%;
+    } 
+
+    20% {
+        border-radius: 65% 30% 45% 58%;
+    }
+
+    40% {
+        border-radius: 38% 72% 30% 50%;
+    }
+
+    60% {
+        border-radius: 45% 35% 50% 85%;
+    }
+
+    80% {
+        border-radius: 80% 52% 55% 40%;
+    }
+
+    100% {
+        border-radius: 25% 47% 75% 70%;
+    } 
+}
+
+@keyframes blobMovementOne {
+    25% {
+        transform: translate(50%, 25%);
+    }
+
+    50% {
+        transform: translate(-20%, 35%) rotateY(40deg) scale(1.4);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes blobMovementTwo {
+    25% {
+        transform: translate(-5%, 30%);
+    }
+
+    50% {
+        transform: translate(60%, 40%) rotateY(-50deg) scale(1.2);
+    }
+
+    100% {
+        transform: none;
+    }
+}

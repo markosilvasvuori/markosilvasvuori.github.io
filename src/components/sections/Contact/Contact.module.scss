@@ -1,0 +1,25 @@
+@import '../../../sassStyles/functions.scss';
+@import '../../../sassStyles/variables.scss';
+
+@include commonSection;
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.highlight {
+    font-family: $boldFontFamily;
+    color: $redColor;
+}
+
+.email {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.link {
+    margin-top: 5px;
+    color: $whiteColor;
+}

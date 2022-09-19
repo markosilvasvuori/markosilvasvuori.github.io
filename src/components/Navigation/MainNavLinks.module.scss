@@ -1,0 +1,24 @@
+@import '../../sassStyles/variables.scss';
+
+.links {
+    ul {
+        display: flex;
+        list-style: none;
+        font-family: $boldFontFamily;
+
+        li {
+            margin-left: 20px;
+
+            a {
+                color: $whiteColor;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: color .1s ease-in-out;
+
+                &:hover {
+                    color: $redColor;
+                }
+            }
+        }
+    }
+}

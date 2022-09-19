@@ -1,0 +1,45 @@
+@import '../../../sassStyles/variables.scss';
+
+.projects {
+    position: relative;
+    top: -40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .container {
+        float: none;
+        width: 100%;
+        margin-left: none;
+    }
+}
+
+.sticky {
+    position: relative;
+    top: -30px;
+    display: inline-block;
+    width: 100%;
+    font-size: 9vw;
+    color: $whiteColor;
+}
+
+@media screen and (min-width: 768px) {
+    .projects {
+        display: inline-block;
+        text-align: left;
+
+        .container {
+            float: right;
+            width: 50%;
+            margin-left: auto;
+            padding: 0 20px;
+        }
+    }
+
+    .sticky {
+        position: sticky;
+        top: 30px;
+        width: 50%;
+        font-size: 5vw;
+    }
+}

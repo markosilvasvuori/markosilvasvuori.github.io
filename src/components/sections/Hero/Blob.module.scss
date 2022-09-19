@@ -1,0 +1,31 @@
+@import '../../../sassStyles/animations.scss';
+
+.blob {
+    position: absolute;
+    border-radius: 25% 47% 75% 70%;
+    filter: blur(10px);
+    opacity: .2;
+    // filter: grayscale(1)
+}
+
+.blob.movementOne {
+    animation: $blobTransformAnimation, $blobMovementOne;
+}
+
+.blob.movementTwo {
+    animation: $blobTransformAnimation, $blobMovementTwo;
+}
+
+@media screen and (min-width: 550px) {
+    .blob {
+        // filter: blur(150px);
+        // opacity: .29;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .blob {
+        // filter: blur(200px);
+        // opacity: .2;
+    }
+}
