@@ -1,4 +1,3 @@
-import Button from '../../UI/Button';
 import classes from './Project.module.scss';
 
 const Project = ({ image, title, technologies, description, liveLink, gitHubLink }) => {
@@ -15,8 +14,20 @@ const Project = ({ image, title, technologies, description, liveLink, gitHubLink
             </ul>
             <p className={classes.description}>{description}</p>
             <div className={classes.buttons}>
-                <Button>Live Site</Button>
-                <Button>GitHub</Button>
+                <a 
+                    className={classes.button} 
+                    href={liveLink} target='_blank'
+                    rel='noreferrer'
+                    >
+                        Live Site
+                </a>
+                <a 
+                    className={classes.button} 
+                    href={gitHubLink} target='_blank'
+                    rel='noreferrer'
+                    >
+                        GitHub
+                </a>
             </div>
         </div>
     );

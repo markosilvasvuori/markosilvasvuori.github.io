@@ -39,3 +39,58 @@
         }
     }
 }
+
+@mixin buttonStyle {
+    .button {
+        position: relative;
+        padding: 15px 25px;
+        font-family: $boldFontFamily;
+        color: $whiteColor;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 1px solid $redColor;
+        border-radius: 50%;
+        background-color: transparent;
+        cursor: pointer;
+    
+        &:hover {
+            &::before {
+                left: -10%;
+                width: 120%;
+            }
+    
+            &::after {
+                top: -5%;
+                left: -2.5%;
+                width: 105%;
+                height: 110%;
+            }
+        }
+    
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -5%;
+            width: 110%;
+            height: 100%;
+            border-radius: 50%;
+            border: 1px solid $redColor;
+            transform: rotate(5deg);
+            transition: all .2s ease-in-out;
+        }
+    
+        &::after {
+            content: '';
+            position: absolute;
+            top: -2.5%;
+            left: 0;
+            width: 98%;
+            height: 105%;
+            border-radius: 50%;
+            border: 1px solid $redColor;
+            transform: rotate(-4deg);
+            transition: all .1s ease-in-out;
+        }
+    }
+}

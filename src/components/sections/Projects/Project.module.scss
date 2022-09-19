@@ -1,5 +1,6 @@
 @import '../../../sassStyles/variables.scss';
 @import '../../../sassStyles/animations.scss';
+@import '../../../sassStyles/functions.scss';
 
 .project {
     display: flex;
@@ -73,10 +74,15 @@
 }
 
 .buttons {
-    button:first-child {
+    margin-top: 20px;
+    font-size: 0.875rem;
+
+    a:first-child {
         margin-right: 30px;
     }
 }
+
+@include buttonStyle;
 
 @media screen and (min-width: 768px) {
     .project {
